@@ -1,10 +1,12 @@
 body {
-    background-color: #F2F2E9;
-    color: #593A2E;
-    font-family: Arial, sans-serif;
-    height: 100%; 
+    background-color: #F2F2E9; /* Колір фону */
+    color: #593A2E; /* Колір тексту */
+    font-family: Arial, sans-serif; /* Шрифт */
+    font-size: 18px; /* Розмір шрифту */
+    line-height: 1.6; /* Міжрядковий інтервал */
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    text-align: justify; /* Вирівнювання тексту по ширині */
 }
 
 header {
@@ -14,7 +16,39 @@ header {
     text-align: center;
 }
 
-h1, h2, p {
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #A66F5B;
+    text-align: center;
+    margin-bottom: 20px; /*відступ знизу*/
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #255459;
+    text-align: center;
+    margin-bottom: 15px; /*відступ знизу*/
+}
+
+p {
+    text-align: center;
+}
+
+/* Стилізація унікального заголовка */
+#main-title {  
+    font-size: 36px;
+    font-style: italic;
+    color: #FF5733;
+    text-align: center;
+}
+
+/* Стилізація класу для особливого тексту */
+.special-text {
+    font-size: 20px;
+    color: #255459;
+    line-height: 1.8;
     text-align: center;
 }
 
@@ -29,42 +63,72 @@ nav a:hover {
 }
 
 table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    text-align: center;
-    background-color: #F2F2E9;
+    width: 80%; 
+    margin: 20px auto; /* Відступи зверху і знизу , вирівнювання по центру */
+    border-collapse: collapse; /* Пробіли між межами клітинок */
+    text-align: center; 
 }
+
+/* Стилі для заголовків і клітинок */
 th, td {
-    border: 1px solid #593A2E;
-    padding: 15px;
+    border: 1px solid #593A2E; 
+    padding: 15px; /* Відступи всередині клітинок */
 }
+
+/* Стилі для заголовків таблиці */
 th {
-    background-color: #A66F5B;
-    color: white;
+    background-color: #A66F5B; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-transform: uppercase; /* Великі літери для заголовків */
 }
+
+/* Стилі для клітинок таблиці */
+td {
+    font-family: 'Verdana', sans-serif; /* Шрифт для клітинок */
+    font-size: 16px;
+}
+
 caption {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-#about-page {
-    position: relative; /* Встановлюємо відносне позиціонування для батьківського елемента */
-    height: 100%; /* Контейнер займає всю висоту батьківського елемента */
+/* Стилі для маркованих списків */
+ul {
+    padding-left: 20px; 
 }
 
-#about-page::before {
-    content: ""; /* Створюємо псевдоелемент для фонового зображення */
-    position: absolute; /* Абсолютне позиціонування для розміщення поверх контейнера */
-    width: 100%; 
-    height: 100%; 
-    background: url('./images/background.png') no-repeat center center; 
-    background-size: cover; /* Зображення заповнює весь контейнер */
-    opacity: 0.5; 
-    z-index: -1; /* Відправляємо фон за основний контент */
+/* Стилі для маркованих списків з квадратними маркерами */
+ul[style="list-style-type: square;"] {
+    list-style-type: square; /* Квадратні маркери */
+    padding-left: 40px;
+    color: #A66F5B;
 }
 
+
+ol { /* Стилі для нумерованих списків */
+    list-style-type: decimal; 
+    padding-left: 20px; 
+}
+
+dl { 
+    margin-left: 20px; 
+}
+
+dt { /* Терміни */
+    font-weight: bold; 
+    color: #255459; 
+}
+
+dd { /* Визначення */
+    margin-bottom: 10px; /* Відступ знизу для кожного визначення */
+    margin-left: 20px; /* Відступ для визначення */
+    font-style: italic; /* Курсив для визначень */
+    color: #593A2E; /* Колір тексту визначень */
+}
 
 footer {
     background-color: #255459;
