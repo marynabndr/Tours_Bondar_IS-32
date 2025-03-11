@@ -62,6 +62,17 @@ nav a:hover {
     color: #A66F5B;
 }
 
+a {
+    color: #FF5733;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    color: #A66F5B;
+}
+
+
 table {
     width: 80%; 
     margin: 20px auto; /* Відступи зверху і знизу , вирівнювання по центру */
