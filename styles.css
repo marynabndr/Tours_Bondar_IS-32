@@ -1,19 +1,50 @@
 body {
-    background-color: #F2F2E9; /* Колір фону */
-    color: #593A2E; /* Колір тексту */
-    font-family: Arial, sans-serif; /* Шрифт */
-    font-size: 18px; /* Розмір шрифту */
-    line-height: 1.6; /* Міжрядковий інтервал */
+    background-color: #F2F2E9; 
+    color: #593A2E; 
+    font-family: Arial, sans-serif; 
+    font-size: 18px;
+    line-height: 1.6; /*інтервал */
     margin: 0;
     padding: 0;
-    text-align: justify; /* Вирівнювання тексту по ширині */
+    text-align: justify; /*по ширині */
 }
 
 header {
     background-color: #255459;
-    color: white;
+    color: #FF5733;
     padding: 15px;
     text-align: center;
+}
+
+header nav a { /* Контекстний селектор */
+    color: #FFF; 
+    font-weight: bold;
+}
+
+nav a {
+    color: #75BFB8;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #A66F5B;
+}
+
+a {
+    color: #FF5733;
+    text-decoration: none !important;
+    padding: 10px;
+}
+
+a:hover {
+    color: #A66F5B;
+}
+
+
+h1 + h2 { /* Сусідній селектор*/
+    color: #FF5733; 
+    font-size: 28px;
 }
 
 h1 {
@@ -29,14 +60,10 @@ h2 {
     font-weight: bold;
     color: #255459;
     text-align: center;
-    margin-bottom: 15px; /*відступ знизу*/
+    margin-bottom: 15px; 
 }
 
-p {
-    text-align: center;
-}
 
-/* Стилізація унікального заголовка */
 #main-title {  
     font-size: 36px;
     font-style: italic;
@@ -44,34 +71,20 @@ p {
     text-align: center;
 }
 
-/* Стилізація класу для особливого тексту */
+.main-title {  
+    font-size: 36px;
+    font-style: italic;
+    color: #33ff5c;
+    text-align: center;
+}
+
+
 .special-text {
     font-size: 20px;
     color: #255459;
     line-height: 1.8;
     text-align: center;
 }
-
-nav a {
-    color: #75BFB8;
-    text-decoration: none;
-    padding: 10px;
-}
-
-nav a:hover {
-    color: #A66F5B;
-}
-
-a {
-    color: #FF5733;
-    text-decoration: none;
-    padding: 10px;
-}
-
-a:hover {
-    color: #A66F5B;
-}
-
 
 table {
     width: 80%; 
@@ -80,13 +93,13 @@ table {
     text-align: center; 
 }
 
-/* Стилі для заголовків і клітинок */
+
 th, td {
     border: 1px solid #593A2E; 
     padding: 15px; /* Відступи всередині клітинок */
 }
 
-/* Стилі для заголовків таблиці */
+
 th {
     background-color: #A66F5B; 
     font-family: 'Arial', sans-serif; 
@@ -95,7 +108,7 @@ th {
     text-transform: uppercase; /* Великі літери для заголовків */
 }
 
-/* Стилі для клітинок таблиці */
+
 td {
     font-family: 'Verdana', sans-serif; /* Шрифт для клітинок */
     font-size: 16px;
@@ -135,11 +148,21 @@ dt { /* Терміни */
 }
 
 dd { /* Визначення */
-    margin-bottom: 10px; /* Відступ знизу для кожного визначення */
-    margin-left: 20px; /* Відступ для визначення */
-    font-style: italic; /* Курсив для визначень */
-    color: #593A2E; /* Колір тексту визначень */
+    margin-bottom: 10px; /* Відступ знизу */
+    margin-left: 20px; /* Відступ*/
+    font-style: italic; /* Курсив */
+    color: #593A2E; 
 }
+
+footer > p { /* Дочірний селектор */
+    font-style: italic;
+    color: #A66F5B;
+} 
+
+p {
+    color: #255459;
+    text-align: center;
+} 
 
 footer {
     background-color: #255459;
