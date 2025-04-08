@@ -17,29 +17,50 @@ header {
 }
 
 header nav a { /* Контекстний селектор */
-    color: #FFF; 
     font-weight: bold;
 }
 
+
 nav a {
-    color: #75BFB8;
     text-decoration: none;
     padding: 10px;
 }
 
-nav a:hover {
-    color: #A66F5B;
+
+/* Псевдокласи для посилань */
+a:link {
+    color: #471509; /* для непереглянутих посилань */
 }
 
-a {
-    color: #FF5733;
-    text-decoration: none !important;
-    padding: 10px;
+a:visited {
+    color: #ffffff; /* для переглянутих */
 }
 
 a:hover {
-    color: #A66F5B;
+    color: #A66F5B; /* при наведенні */
 }
+
+a:active {
+    color: #FF0000; /* при натисканні */
+}
+
+/* Псевдоклас :first-child */
+ul li:first-child a {
+    font-style: italic; /* Facebook буде курсивом */
+}
+
+/* Псевдоелемент :before */
+ul li a::before {
+    content: "🔗 ";
+    color: #555;
+}
+
+/* Псевдоелемент :after */
+ul li a::after {
+    content: " ➤";
+    color: #999;
+}
+
 
 
 h1 + h2 { /* Сусідній селектор*/
@@ -153,6 +174,87 @@ dd { /* Визначення */
     font-style: italic; /* Курсив */
     color: #593A2E; 
 }
+
+/* Стиль для div */
+.text-block {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fdfaf4;
+    border-left: 6px solid #A66F5B;
+    border-right: 6px solid #A66F5B;
+    border-radius: 12px;
+    max-width: 1000px;
+}
+
+.text-block p {
+    color: #255459;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Стиль для span */
+span.highlight {
+    color: #A66F5B;
+    font-weight: bold;
+}
+
+span.accent {
+    color: #FF5733;
+    font-style: italic;
+}
+
+/* Position */
+.list-section {
+    position: relative;  /* відносне */
+    padding: 20px;
+    margin: 30px auto;
+    background: #fdfaf4;
+    max-width: 1000px;
+    border-left: 4px solid #A66F5B;
+    border-right: 4px solid #A66F5B;
+    border-radius: 10px;
+}
+
+.list-section span.decor {
+    position: absolute; /* абсолютне */
+    top: -10px;
+    left: -10px;
+    background: #A66F5B;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 30%;
+    font-size: 30px;
+}
+
+.sticky-title {
+    position: sticky; /* прилипле */
+    top: 0;
+    background: #A66F5B;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: #FF5733;
+}
+
+.fixed-info {
+    position: fixed; /* фіксоване */
+    bottom: 15px;
+    left: 15px;
+    background: #255459;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* float */
+.floating-image-block {
+    float: left; 
+    margin: 10px;
+}
+
 
 footer > p { /* Дочірний селектор */
     font-style: italic;
