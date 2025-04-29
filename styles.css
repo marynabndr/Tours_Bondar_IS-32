@@ -11,7 +11,7 @@ body {
 
 header {
     background-color: #255459;
-    color: #FF5733;
+    color: #471509;
     padding: 15px;
     text-align: center;
 }
@@ -29,19 +29,19 @@ nav a {
 
 /* Псевдокласи для посилань */
 a:link {
-    color: #471509; /* для непереглянутих посилань */
-}
+    color: #A66F5B; 
+} 
 
 a:visited {
-    color: #ffffff; /* для переглянутих */
-}
+    color: #A66F5B; /* колір для відвіданих посилань */
+} 
 
 a:hover {
-    color: #A66F5B; /* при наведенні */
+    color: #471509; /* при наведенні */
 }
 
 a:active {
-    color: #FF0000; /* при натисканні */
+    color: #471509; /* при натисканні */
 }
 
 /* Псевдоклас :first-child */
@@ -95,14 +95,13 @@ h2 {
 .main-title {  
     font-size: 36px;
     font-style: italic;
-    color: #33ff5c;
     text-align: center;
 }
 
 
 .special-text {
     font-size: 20px;
-    color: #255459;
+   
     line-height: 1.8;
     text-align: center;
 }
