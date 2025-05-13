@@ -13,7 +13,7 @@ function dialogWithUser() {
 }
 
 // Інформація про розробника
-function showDeveloperInfo(surname, name, position = "студентка групи ІС-32") {
+function showDeveloperInfo(surname, name, position) {
     alert(`Розробник сторінки: ${surname} ${name}\nПосада: ${position}`);
 }
 

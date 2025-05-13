@@ -1,14 +1,12 @@
-// Зміна фону на 30 сек
 document.body.style.backgroundColor = "#F0F8FF"; 
 
-setTimeout(() => {
-    document.body.style.backgroundColor = "#F2F2E9";
-}, 30000); 
+// setTimeout(() => {
+//     document.body.style.backgroundColor = "#F2F2E9";
+// }, 30000); 
 
-// Перенаправлення на іншу сторінку
-//setTimeout(() => {
-   // location.href = "https://www.google.com.ua/maps/@50.429952,30.4840704,12z?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D"; // Заміни на бажану сторінку
-//}, 50000);
+// setTimeout(() => {
+//    location.href = "https://www.google.com.ua/maps/@50.429952,30.4840704,12z?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D"; // Заміни на бажану сторінку
+// }, 50000);
 
 // getElementById — зміна заголовку таблиці
 document.getElementById("main-title").innerHTML = "<b>Тури Європи</b>";
@@ -29,7 +27,7 @@ console.log("nodeValue/data (перший текстовий вузол):", firs
 
 
 // document.write 
-document.write("<!-- Цей текст вставлено за допомогою document.write -->");
+document.write("Лабораторна робота 6");
 
 // createElement, createTextNode та методів вставки
 const newPara = document.createElement("p");
@@ -44,12 +42,12 @@ notice.textContent = "🚌 Гарячі тури! Не прогавте!";
 notice.style.color = "red";
 document.querySelector("main").prepend(notice);
 
-// replaceWith — замінюємо перший <h2>
+// replaceWith 
 const newHeading = document.createElement("h2");
 newHeading.textContent = "🔁 Оновлені тури";
 document.querySelector("h2").replaceWith(newHeading);
 
-// remove — видаляємо останній рядок таблиці
+// remove 
 const lastRow = document.querySelector("tbody").lastElementChild;
 lastRow.remove();
 
