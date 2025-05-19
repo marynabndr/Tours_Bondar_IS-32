@@ -1,13 +1,13 @@
-function highlightTours() { // через атрибут
+function highlightTours() { 
     alert("Виберіть свій тур! Популярні напрямки вже чекають!");
 }
 
-const secondHeading = document.querySelectorAll("h1")[1]; // через властивість
+const secondHeading = document.querySelectorAll("h1")[1]; 
 secondHeading.onmouseover = function () {
     secondHeading.style.color = "#FF5733";
 };
  
-// 2 обробники до 1 події
+
 const table = document.querySelector("table");
 function showTableMessage() {
     console.log("Клік по таблиці з турами!");
@@ -18,7 +18,7 @@ function highlightTable() {
 table.addEventListener("click", showTableMessage);
 table.addEventListener("click", highlightTable);
 
-// об'єкт-обробник з методом handleEvent
+
 const objectHandler = {
     handleEvent(event) {
         alert("Для бронювання зв'яжіться з менеджерами");
