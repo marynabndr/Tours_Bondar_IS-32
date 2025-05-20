@@ -247,13 +247,6 @@ span.accent {
     font-size: 14px;
 }
 
-/* float */
-.floating-image-block {
-    float: left; 
-    margin: 10px;
-}
-
-
 footer > p { /* Дочірний селектор */
     font-style: italic;
     color: #A66F5B;
@@ -290,4 +283,15 @@ footer {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
+}
+
+.floating-image-block img {
+    position: absolute;
+    cursor: grab;
+    user-select: none;
+    left: 20px;
+}
+
+.floating-image-block {
+    position: relative;
 }
